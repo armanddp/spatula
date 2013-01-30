@@ -26,6 +26,8 @@ module Spatula
         "fedora"
       when /CentOS/i
         "centos"
+      when /Amazon Linux/i
+        "centos"
       when ""
         raise "Couldn't get system info from /etc/issue. Please check your SSH credentials."
       else
